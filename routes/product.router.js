@@ -44,8 +44,8 @@ router.patch('/:id', (req, res) => {
   const {id} = req.params;
   const body = req.body;
   const product = service.update(id, body);
-  res.json({
-    message: '/:actualziado',
+  res.status(200).json({
+    message: 'actualziado',
     product
   });
 });
@@ -53,8 +53,7 @@ router.patch('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   const {id} = req.params;
   const eliminar = service.delete(id);
-
-  res.json({
+  res.status(200).json({
     message: 'eliminado',
     eliminar
   });

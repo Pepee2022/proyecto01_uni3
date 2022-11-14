@@ -41,7 +41,7 @@ class ProductService {
 
   }
 
-  update(id, changes){
+  update( id, changes){
     const index = this.products.findIndex(product => {
       return product.id === id;
     });
@@ -53,10 +53,10 @@ class ProductService {
       ...product,
       ...changes
     }
-
     return this.products[index];
-
   }
+
+
   delete(id){
     const index = this.products.findIndex(product => {
     return product.id === id;
