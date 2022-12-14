@@ -6,11 +6,11 @@ const port = 3100;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('HOLLAAA');
+  res.send('Holi uwu');
 });
 
 routerApi(app);
 
 app.listen(port, () => {
-  console.log('express server activo: ' + port);
+  console.log('Express Server Activo: ' + port);
 });
