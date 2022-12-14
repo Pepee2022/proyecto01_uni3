@@ -35,4 +35,4 @@ function routerApi5(app) {
   routerV5.use('/clientes', clientesRouter);
 }
 
-(module.exports = routerApi1), routerApi2, routerApi3, routerApi4, routerApi5;
+(module.exports = routerApi1, routerApi2, routerApi3, routerApi4, routerApi5);
